@@ -38,13 +38,19 @@ def analyze_poem(poem):
     print(f"Average words per line: {avg_words_per_line:.2f}")
     print(f"Rhyme scheme: {rhyme_scheme}")
 
-# Example poem
-poem = """
-    I wandered lonely as a cloud
-    That floats on high o'er vales and hills,
-    When all at once I saw a crowd,
-    A host, of golden daffodils;
-"""
 
-# Analyze the poem
-analyze_poem(poem)
+def main():
+    # Example poem
+    poem = """
+        I wandered lonely as a cloud
+        That floats on high o'er vales and hills,
+        When all at once I saw a crowd,
+        A host, of golden daffodils;
+    """
+    
+    # Analyze the poem
+    analyze_poem(poem)
+
+
+if __name__ == "__main__":
+    main()

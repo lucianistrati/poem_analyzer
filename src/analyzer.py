@@ -29,24 +29,28 @@ def find_most_common_words(poem, num_words=5):
     word_counts = Counter(words)
     return word_counts.most_common(num_words)
 
-# Example poem
-poem = """
-    I wandered lonely as a cloud
-    That floats on high o'er vales and hills,
-    When all at once I saw a crowd,
-    A host, of golden daffodils;
-"""
+def main():
+    # Example poem
+    poem = """
+        I wandered lonely as a cloud
+        That floats on high o'er vales and hills,
+        When all at once I saw a crowd,
+        A host, of golden daffodils;
+    """
+    
+    # Remove punctuation
+    clean_poem = remove_punctuation(poem)
+    
+    # Count total syllables
+    total_syllables = count_total_syllables(clean_poem)
+    
+    # Analyze sentiment
+    sentiment_scores = analyze_sentiment(poem)
+    
+    # Find most common words
+    common_words = find_most_common_words(poem)
+    
+    print("Total syllables in the poem:", total_syll
 
-# Remove punctuation
-clean_poem = remove_punctuation(poem)
-
-# Count total syllables
-total_syllables = count_total_syllables(clean_poem)
-
-# Analyze sentiment
-sentiment_scores = analyze_sentiment(poem)
-
-# Find most common words
-common_words = find_most_common_words(poem)
-
-print("Total syllables in the poem:", total_syll
+if __name__ == "__main__":
+    main()

@@ -26,5 +26,3 @@ The Poetry Analyzer project draws inspiration from the rich tradition of poetry 
 
 
 With its commitment to exploring the depths of poetry and making it more approachable, the Poetry Analyzer aims to be a valuable resource for poetry enthusiasts, scholars, and learners alike.
-
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
